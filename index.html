@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethan Driggers | Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            min-height: 100vh;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        
+        /* Sidebar */
+        .sidebar {
+            width: 250px;
+            background-color: #2c3e50;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        .sidebar h1 {
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            text-align: center;
+            border-bottom: 2px solid #fff;
+            padding-bottom: 10px;
+            width: 100%;
+        }
+        .sidebar nav {
+            margin-top: 20px;
+            width: 100%;
+        }
+        .sidebar nav a {
+            display: block;
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-size: 1.1em;
+            text-align: center;
+            margin: 5px 0;
+            transition: background 0.3s;
+        }
+        .sidebar nav a:hover {
+            background-color: #34495e;
+            border-radius: 5px;
+        }
+        
+        /* Main Content */
+        .main-content {
+            flex: 1;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .section {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .section h2 {
+            font-size: 1.6em;
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+        .section p, .section ul {
+            font-size: 1em;
+            line-height: 1.6;
+            color: #555;
+        }
+        .section ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .section ul li {
+            margin-bottom: 10px;
+        }
+
+        /* Work Experience and Project Items */
+        .work-item, .project-item {
+            margin-bottom: 15px;
+        }
+        .work-item h3, .project-item h3 {
+            font-weight: bold;
+            font-size: 1.1em;
+            color: #333;
+        }
+        .work-item p, .project-item p {
+            margin: 5px 0;
+            font-size: 0.95em;
+            color: #555;
+        }
+
+        /* Contact Links */
+        .contact-info a {
+            color: #0073e6;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Sidebar -->
+<div class="sidebar">
+    <h1>Ethan Driggers</h1>
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#work">Work Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact Me</a>
+    </nav>
+</div>
+
+<!-- Main Content Area -->
+<div class="main-content">
+    <!-- About Me Section -->
+    <div id="about" class="section">
+        <h2>About Me</h2>
+        <p>Results-driven computer science student pursuing a master’s degree in Computer Science Information Systems through an accelerated program. Skilled in Python, Java, and automating processes for increased quality of work life. Passionate about software engineering, artificial intelligence, and teamwork for maximum impact.</p>
+    </div>
+  
+    <!-- Skills Section -->
+    <div id="skills" class="section">
+        <h2>Skills</h2>
+        <ul>
+            <!-- Technical Skills -->
+            <li><strong>Python</strong> - Proficient in data manipulation, scripting, and automation.</li>
+            <li><strong>Java</strong> - Skilled in object-oriented programming and application development.</li>
+            <li><strong>HTML & CSS</strong> - Experienced in creating responsive web pages with modern design practices.</li>
+            <li><strong>C</strong> - Knowledgeable in systems programming and memory management.</li>
+            <li><strong>Data Structures</strong> - Strong understanding of efficient data organization and manipulation.</li>
+            <li><strong>AI Search Algorithms</strong> - Proficient in implementing informed and uninformed search techniques.</li>
+            <li><strong>Unreal Engine 5</strong> - Experience in game development and interactive simulations.</li>
+            <li><strong>Git/Github</strong> - Skilled in version control, branching strategies, and collaborative workflows.</li>
+            
+            <!-- Soft Skills -->
+            <li><strong>Problem-Solving</strong> - Effective at analyzing complex issues and finding practical solutions.</li>
+            <li><strong>Communication</strong> - Strong verbal and written communication skills, tailored for diverse audiences.</li>
+            <li><strong>Teamwork</strong> - Collaborative and dependable in team settings, promoting a positive work environment.</li>
+            <li><strong>Adaptability</strong> - Quick to learn and adjust to new technologies and dynamic situations.</li>
+        </ul>
+    </div>
+
+    <!-- Work Experience Section -->
+    <div id="work" class="section">
+        <h2>Work Experience</h2>
+        <div class="work-item">
+            <h3>Teaching Assistant | University of North Carolina Wilmington</h3>
+            <p>Collaborate with instructors to develop and test course content code to be assigned to students. Developed custom automated testing tools using Python to analyze, test, and grade student code.</p>
+        </div>
+        <div class="work-item">
+            <h3>AI Data Trainer | Data Annotation Tech</h3>
+            <p>Evaluated language model outputs to improve AI interactions, using Python and Pandas for analysis across metrics such as response speed, accuracy, and safety.</p>
+        </div>
+    </div>
+
+    <!-- Projects Section -->
+    <div id="projects" class="section">
+        <h2>Projects</h2>
+        <div class="project-item">
+            <h3>Smart Home Lock Research</h3>
+            <p>Leading independent research on AI-powered smart home lock, combining machine learning and pattern recognition for enhanced security in smart home technology.</p>
+        </div>
+        <div class="project-item">
+            <h3>Key Audit Organizer</h3>
+            <p>Developed a Python script to streamline university key management by sorting room numbers for key audits, leveraging Pandas and regex.</p>
+            <h3>Song Index</h3>
+            <p>Utilized Hash Tables in Python to implement an efficient and accurate song index, allowing individuals to find the title of a song with a String input.</p>
+            <p><a href="https://github.com/EDrigs/IndexingSongTitles">IndexingHashTables Github Respository</a></p>
+            <h3>Purple Team: A First-Person Action Game for Cybersecurity Education</h3>
+            <p>Designed a first-person multiplayer action game in Unreal Engine 5 that utilizes various cybersecurity techniques for attacks and defenses in a king of the hill-style setting.</p>
+            <p><a href="https://github.com/EDrigs/PurpleTeam">PurpleTeam Github Respository (Work in Progress)</a></p>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contact" class="section">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:ethan.driggers10@gmail.com">ethan.driggers10@gmail.com</a></p>
+        <p>Phone: 910-827-7865</p>
+        <p><a href="https://github.com/EDrigs">GitHub</a> | <a href="https://linkedin.com/in/ethan-driggers">LinkedIn</a></p>
+        <p>Location: Wilmington, NC</p>
+    </div>
+</div>
+
+</body>
+</html>
